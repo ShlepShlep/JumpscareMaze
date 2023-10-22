@@ -6,6 +6,7 @@ public class PlayButton : MonoBehaviour
 {
     public GameObject startScreen;
     public GameObject player;
+    public GameObject levelString;
     void OnMouseDown()
     {
 
@@ -15,5 +16,8 @@ public class PlayButton : MonoBehaviour
     {
         startScreen.SetActive(false);
         player.SetActive(true);
+        Cursor.visible = false;
+        levelString.SetActive(true);
+
     }
 }
